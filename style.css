@@ -1,0 +1,126 @@
+.cb-slideshow,
+.cb-slideshow:after {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  list-style-type: none;
+}
+
+ .cb-slideshow:after {
+    content: '';
+    background: linear-gradient(
+      black, #04cbf2
+    );
+    opacity: .5;
+}
+
+.cb-slideshow li span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  -webkit-animation: imageAnimation 36s linear infinite 0s; /* Safari 4+ */
+  -moz-animation:  imageAnimation 36s linear infinite 0s; /* Fx 5+ */
+  -o-animation: imageAnimation 36s linear infinite 0s;
+  animation: imageAnimation 36s linear infinite 0s;
+}
+
+.cb-slideshow li div {
+  z-index: 1000;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.cb-slideshow li div h3 {
+  font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+ font-size: 100px;
+ padding: 0;
+ line-height: 100px;
+ text-transform: uppercase;
+}
+
+.cb-slideshow li:nth-child(1) span {
+    background: url(images/climbing1.jpg)
+}
+.cb-slideshow li:nth-child(2) span {
+    background: url(images/climbing2.jpg);
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) span {
+    background: url(images/climbing3.jpg);
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) span {
+    background: url(images/climbing4.jpg);
+    -webkit-animation-delay: 18s;
+    animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) span {
+    background: url(images/climbing5.jpg);
+    -webkit-animation-delay: 24s;
+    animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) span {
+    background: url(images/climbing6.jpg);
+    -webkit-animation-delay: 30s;
+    animation-delay: 30s;
+}
+
+
+
+@-webkit-keyframes imageAnimation {
+  0% { opacity: 0;  }
+  8% { opacity: 1; }
+  17% { opacity: 1; }
+  25% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-moz-keyframes imageAnimation {
+  0% { opacity: 0; }
+  8% { opacity: 1; }
+  17% { opacity: 1; }
+  25% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-o-keyframes imageAnimation {
+  0% { opacity: 0; }
+  8% { opacity: 1; }
+  17% { opacity: 1; }
+  25% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes imageAnimation {
+    0% { opacity: 0;  }
+    8% { opacity: 1; }
+    17% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+
+
+
+
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
