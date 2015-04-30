@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
 .cb-slideshow,
 .cb-slideshow:after {
   position: fixed;
@@ -7,12 +10,13 @@
   left: 0px;
   z-index: 0;
   list-style-type: none;
+  margin-top: 0;
 }
 
  .cb-slideshow:after {
     content: '';
     background: linear-gradient(
-      black, #04cbf2
+      #0db523, #04cbf2
     );
     opacity: .5;
 }
@@ -47,10 +51,18 @@
 
 .cb-slideshow li div h3 {
   font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
- font-size: 100px;
+ font-size: 80px;
  padding: 0;
- line-height: 100px;
+ line-height: 80px;
  text-transform: uppercase;
+ border: 8px solid #fff;
+ letter-spacing: 3px;
+ display: inline-block;
+ padding: 10px 40px;
+ font-weight: 500;
+ font-family: 'Lato';
+ font-weight: 400;
+ 
 }
 
 .cb-slideshow li:nth-child(1) span {
